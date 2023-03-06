@@ -8,6 +8,30 @@
   text-align:center;
 }
 
+.carousel-item {
+  height: 100vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-60%, -50%);
+  min-width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  background-color:#101726;
+}
+
+#carouselExampleControls > div.carousel-inner{
+
+}
+
 h1 {
   font-family: 'Climate Crisis';
   font-size: 4vw;
