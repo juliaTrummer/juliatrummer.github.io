@@ -1,0 +1,36 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 40px;
+}
+
+.roundedCorners {
+    border-radius: 2.5%;
+}
+
+.bg-dark-blue {
+    background-color: #13293D;
+    /* Replace this with your desired dark-blue color */
+}
+
+
+.icon-white {
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+    opacity: 0.8;
+}
+
+a:hover{
+    opacity: 1;
+    color: black;
+}
