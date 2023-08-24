@@ -1,18 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Bowlby+One+SC&family=Gruppo&family=Montserrat:wght@300;500&display=swap');
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: left;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    font-size: 40px;
-}
-
 .parallax {
     background-size: cover;
     height: 100vh;
