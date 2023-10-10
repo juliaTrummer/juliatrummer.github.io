@@ -19,10 +19,12 @@ img.src = currentFrame(1);
 if(window.innerWidth >= 697){
   console.log(window.innerWidth)
   canvas.width=window.innerWidth - 200;
+  canvas.height=window.innerHeight;
 }else{
   canvas.width=window.innerWidth;
+  canvas.height=window.innerHeight-625;
 }
-canvas.height=window.innerHeight;
+
 img.onload=function(){
   context.drawImage(img, 0, 0, canvas.width, canvas.height);
 }
