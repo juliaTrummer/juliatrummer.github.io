@@ -1,105 +1,15 @@
-.halfImage {
-    width: 50%;
-    height: auto;
+html {
+    height: 100vh;
 }
 
-.vertical-header {
-    padding-left: 100px;
-    float: left;
-    writing-mode: vertical-rl;
+body {
+    height: 100vh;
 }
 
-.vertical-header-right {
-    padding-right: 100px;
-    float: right;
-    writing-mode: vertical-lr;
+canvas {
+    margin-top: 65px;
 }
 
-.possition-right {
-    position: absolute;
+section{
+    height: 100vh;
 }
-
-.roundedCorners {
-    border-radius: 5%;
-}
-
-.roundedButton {
-    border-radius: 10px;
-    background-color: #13293D;
-    border-color: #13293D;
-}
-
-.roundedButton:hover {
-    background-color: #547889;
-    border-color: #547889;
-}
-
-.bg-dark-blue {
-    background-color: #13293D;
-    /* Replace this with your desired dark-blue color */
-}
-
-.sectionContainer {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url("../RES/Background.png");
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 10px;
-}
-
-.overlayImage {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.icon-white {
-    color: white;
-}
-
-html, body, section {
-    block-size: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: left;
-  }
-  
-  html {
-    scroll-snap-type: y mandatory;
-  }
-  
-  section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  section:nth-of-type(even) {
-    color: black;
-    background: white ;
-  }
-  
-  section:nth-of-type(odd) {
-    color: black;
-    background: white;
-  }
