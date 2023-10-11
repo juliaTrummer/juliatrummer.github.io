@@ -2,7 +2,7 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 77;
+const frameCount = 149;
 const currentFrame = index => (
   `../RES/ImageSequence/LandingPage_${index.toString().padStart(5, '0')}.jpg`
 )
@@ -17,12 +17,11 @@ const preloadImages = () => {
 const img = new Image()
 img.src = currentFrame(1);
 if(window.innerWidth >= 697){
-  console.log(window.innerWidth)
   canvas.width=window.innerWidth - 200;
   canvas.height=window.innerHeight;
 }else{
   canvas.width=window.innerWidth;
-  canvas.height=window.innerHeight-625;
+  canvas.height=window.innerHeight/4;
 }
 
 img.onload=function(){

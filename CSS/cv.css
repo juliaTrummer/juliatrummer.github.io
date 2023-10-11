@@ -38,23 +38,6 @@ html, body, section {
   }
 
 
-
-*,
-body,
-html {
-  &::-webkit-scrollbar {
-    background-color: #1e1f26;
-    height: 20px;
-    width: 20px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #383d4d;
-    border-radius: 99em;
-    border: 6px solid #1e1f26;
-  }
-}
-
 img {
   display: block;
   width: 100%;
