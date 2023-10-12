@@ -41,7 +41,8 @@ canvas {
 
 .footer {
   background-color: #000;
-  color: #fff; /* Set the text color to white for better visibility */
+  color: #fff;
+  /* Set the text color to white for better visibility */
 }
 
 
@@ -244,6 +245,9 @@ a>div>h2 {
   }
 }
 
-.bg-dark{
+.bg-dark {
   background-color: black !important;
 }
+  
+
+  
