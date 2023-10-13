@@ -253,6 +253,56 @@ a>div>h2 {
 }
 
 .animatedlink:hover{
-  
   text-decoration: none;
+}
+
+.navbarbackground{
+  background-color: white;
+
+}
+
+.scrolling-text-right-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-text-right {
+  animation: scrollright 50s linear infinite;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  white-space: nowrap;
+}
+
+@keyframes scrollright {
+  0% {
+      right: 100%;
+  }
+  0% {
+      right: -100%;
+  }
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-text {
+  animation: scroll 10s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+      left: 100%;
+  }
+  100% {
+      left: -100%;
+  }
 }
