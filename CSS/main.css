@@ -249,5 +249,10 @@ a>div>h2 {
   background-color: black !important;
 }
   
+.animatedlink{
+}
 
+.animatedlink:hover{
   
+  text-decoration: none;
+}
