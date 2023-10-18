@@ -280,7 +280,7 @@ a>div>h2 {
       right: 100%;
   }
   0% {
-      right: -100%;
+      right: -0%;
   }
 }
 
@@ -288,21 +288,4 @@ a>div>h2 {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-}
-
-.scrolling-text {
-  animation: scroll 10s linear infinite;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  white-space: nowrap;
-}
-
-@keyframes scroll {
-  0% {
-      left: 100%;
-  }
-  100% {
-      left: -100%;
-  }
 }
