@@ -109,6 +109,7 @@ a, summary, button, [role="button"] {
 .link-more:hover { color: #fff; }
 
 /* Nav */
+.menu-toggle { display: none; }
 .site-nav { display: flex; gap: 1.75rem; }
 .site-nav a {
   display: inline-flex;
@@ -330,12 +331,34 @@ a, summary, button, [role="button"] {
     flex-wrap: wrap;
     gap: 0.25rem 1rem;
   }
+  .brand { margin-right: auto; }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 2px solid var(--pink-200);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--pink-200);
+  }
+  .menu-toggle:hover { background: var(--navy-700); }
+  .menu-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .menu-toggle .icon-close,
+  .menu-toggle[aria-expanded="true"] .icon-open { display: none; }
+  .menu-toggle[aria-expanded="true"] .icon-close { display: block; }
   .site-nav {
     order: 3;
     flex-basis: 100%;
-    flex-wrap: wrap;
-    gap: 0 1.25rem;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0.5rem;
   }
+  .site-nav a { min-height: 3rem; border-top: 1px solid var(--navy-700); }
+  html.js .site-nav { display: none; }
+  html.js .site-nav.open { display: flex; }
   .hero { min-height: 0; padding-top: 1.5rem; }
 }
 
